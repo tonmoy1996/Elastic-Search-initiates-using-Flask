@@ -1,0 +1,16 @@
+query_body = {
+        "query": {
+            "bool": {
+                "filter": [
+                    {
+                        "range": {
+                            "searched_at": {
+                                "gte": "1635315250092",
+                                "lte": "1635315251292"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
