@@ -1,6 +1,6 @@
 from elasticsearch import Elasticsearch
 
-# es = Elasticsearch("https://202.181.14.26:9200")
+# es = Elasticsearch("https://0.0.0.0:9200")
 
 # es = Elasticsearch(
 #     ['localhost'],
@@ -10,7 +10,7 @@ from elasticsearch import Elasticsearch
 #     use_ssl=False,
 # )
 def conenect_es(**kwargs):
-    es = Elasticsearch([{"host": "202.181.14.26", "port": 9200}])
+    es = Elasticsearch([{"host": "0.0.0.0", "port": 9200}])
     if es.ping():
         print("es connected successfully")
     else:
